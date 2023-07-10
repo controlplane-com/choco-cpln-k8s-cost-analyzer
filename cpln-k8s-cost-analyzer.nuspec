@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
+
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>cpln-k8s-cost-analyzer</id>
+    <version>1.0.0</version>
+    <packageSourceUrl>https://github.com/controlplane-com/k8s-cost-analyzer</packageSourceUrl>
+    <owners>Control Plane</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>cpln-k8s-cost-analyzer (Install)</title>
+    <authors>Control Plane</authors>
+    <projectUrl>https://github.com/controlplane-com/k8s-cost-analyzer</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/controlplane-com/k8s-cost-analyzer/99462fdefe7471110e39c9c77a715695f048d18c/icon.png</iconUrl>
+    <copyright>©2023, Control Plane Corporation. All rights reserved.</copyright>
+    <licenseUrl>https://github.com/controlplane-com/k8s-cost-analyzer/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/controlplane-com/k8s-cost-analyzer</projectSourceUrl>
+    <docsUrl>https://github.com/controlplane-com/k8s-cost-analyzer/blob/main/README.md</docsUrl>
+    <tags>kubernetes</tags>
+    <summary>Control Plane - K8s Cost Analyzer</summary>
+    <description>This K8s Cost Analyzer is designed to help you calculate the cost savings when running workloads on the Control Plane platform versus running them on any cloud provider.</description>
+    <!-- =============================== -->
+
+    <dependencies>
+      <dependency id="python" version="3.11.4" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -11,11 +11,16 @@ This repository contains the packaging details for the [K8s Cost Analyzer](https
 choco install cpln-k8s-cost-analyzer
 ```
 
-## Test the packager on your Windows machine
+## Install through the repository code
 
-1. Clone this repository.
-2. Navigate to the repository directory on your machine and execute the following command:
+Clone this repository. Then navigate to the repository directory on your machine and execute the following command:
 
 ```bash
-choco install cpln-k8s-cost-analyzer --source "'.;https://community.chocolatey.org/api/v2/'"
+choco pack; choco install cpln-k8s-cost-analyzer --source "'.;https://community.chocolatey.org/api/v2/'"
+```
+
+## Uninstall the package
+
+```bash
+choco uninstall cpln-k8s-cost-analyzer
 ```
