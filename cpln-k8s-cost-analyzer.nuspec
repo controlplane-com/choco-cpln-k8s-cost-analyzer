@@ -5,13 +5,13 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>cpln-k8s-cost-analyzer</id>
-    <version>1.0.0</version>
+    <version>1.0.3</version>
     <packageSourceUrl>https://github.com/controlplane-com/k8s-cost-analyzer</packageSourceUrl>
     <owners>Control Plane</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
-    <title>cpln-k8s-cost-analyzer (Install)</title>
+    <title>Control Plane K8s Cost Analyzer</title>
     <authors>Control Plane</authors>
     <projectUrl>https://github.com/controlplane-com/k8s-cost-analyzer</projectUrl>
     <iconUrl>https://rawcdn.githack.com/controlplane-com/k8s-cost-analyzer/99462fdefe7471110e39c9c77a715695f048d18c/icon.png</iconUrl>

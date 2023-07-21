@@ -18,7 +18,7 @@ function Invoke-SilentCommand {
         Invoke-Expression "$Command 2>`$null" | Out-Null
     }
     catch {
-        throw "We tried to run the following command: '$Command' and it returned this error message: $_ `n`nSorry for the inconvenience, email support@controlplane.com and we’ll be happy to help troubleshoot with you.`n"
+        throw "We tried to run the following command '$Command' and it returned this error message: $_ `n`nSorry for the inconvenience, email support@controlplane.com and we’ll be happy to help troubleshoot with you.`n"
     }
 }
 
@@ -41,6 +41,9 @@ Set-Location -Path $workDir
 
 # Create virtual environment
 Invoke-SilentCommand -Command "python -m venv venv; venv\Scripts\Activate.ps1" -Description "Creating a python virtual environment in the source code directory"
+
+# Upgrade pip if necessary
+Invoke-SilentCommand -Command "python -m pip install --upgrade pip" -Description "Upgrading pip before installing dependencies"
 
 # Install dependencies
 Invoke-SilentCommand -Command "pip install -r requirements.txt; pip install pyinstaller" -Description "Installing python dependencies, please wait"
