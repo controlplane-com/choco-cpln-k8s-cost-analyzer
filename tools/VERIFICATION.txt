@@ -3,7 +3,19 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-The executable has been generated through the repository's source files,
-feel free to check the Software Source: https://github.com/controlplane-com/k8s-cost-analyzer
+The embedded software have been downloaded from the listed download
+location on <https://github.com/controlplane-com/k8s-cost-analyzer/releases/tag/v1.0.0>
+and can be verified by doing the following:
 
-File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/controlplane-com/k8s-cost-analyzer/415b5a33f155feed8dbd6577b128e3c89e4cc78f/LICENSE>
+1. Download the `k8s-cost-analyzer-win-x64.exe` from the location above.
+
+2. Get the checksum using one of the following methods:
+  - Using powershell function 'Get-FileHash'
+  - Use chocolatey utility 'checksum.exe'
+
+3. The checksums should match the following:
+
+  checksum type: sha256
+  checksum64: CA4D43E7BC668704E3915EDD84E0C6EEC137D1CAE4421DE38198C3EF7E35F83C
+
+File 'LICENSE.txt' is obtained from <https://github.com/controlplane-com/k8s-cost-analyzer/blob/main/LICENSE>

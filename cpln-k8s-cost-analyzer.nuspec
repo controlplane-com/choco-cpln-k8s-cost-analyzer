@@ -18,7 +18,7 @@
     <copyright>©2023, Control Plane Corporation. All rights reserved.</copyright>
     <licenseUrl>https://github.com/controlplane-com/k8s-cost-analyzer/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/controlplane-com/k8s-cost-analyzer</projectSourceUrl>
+    <projectSourceUrl>https://github.com/controlplane-com/choco-cpln-k8s-cost-analyzer</projectSourceUrl>
     <docsUrl>https://github.com/controlplane-com/k8s-cost-analyzer/blob/main/README.md</docsUrl>
     <tags>cli kubernetes</tags>
     <summary>Control Plane - K8s Cost Analyzer</summary>
