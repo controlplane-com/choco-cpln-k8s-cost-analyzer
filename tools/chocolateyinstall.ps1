@@ -1,4 +1,6 @@
-﻿# Functions
+﻿# $ErrorActionPreference = 'Stop'
+
+# Functions
 function Print {
     param(
         [string]$Message,
@@ -23,18 +25,21 @@ function Invoke-SilentCommand {
 }
 
 # Define main variables
+$version = '1.0.0'
 $executableName = $env:ChocolateyPackageName
 $executableNameWithExtension = "$executableName.exe"
-$url = "https://github.com/controlplane-com/k8s-cost-analyzer/archive/refs/tags/v" + $env:ChocolateyPackageVersion + ".zip"
-$unzippedFolderName = "k8s-cost-analyzer-" + $env:ChocolateyPackageVersion
+$url = "https://github.com/controlplane-com/k8s-cost-analyzer/archive/refs/tags/v" + $version + ".zip"
+$unzippedFolderName = "k8s-cost-analyzer-" + $version
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$cacheDir = Join-Path (Get-PackageCacheLocation) $env:ChocolateyPackageName
+$cacheDir = Join-Path (Get-PackageCacheLocation) $executableName
 $workDir = Join-Path $cacheDir $unzippedFolderName
+$checksumType = 'sha256'
+$checksum = '8602346FF9FCC9281AC6863F2DB57098D355ED4BB22B74A811E4E2A3D2D20E9E'
 
 Print -Message "[INFO] The script will simply download the source code and execute pyinstaller to create the $executableName executable" -Color Yellow
 
 # Install the zip from the $url
-Install-ChocolateyZipPackage -PackageName $env:ChocolateyPackageName -Url $url -UnzipLocation $cacheDir
+Install-ChocolateyZipPackage -PackageName $executableName -Url $url -UnzipLocation $cacheDir -Checksum $checksum -ChecksumType $checksumType
 
 # Change current working directory
 Set-Location -Path $workDir

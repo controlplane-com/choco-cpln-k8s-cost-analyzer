@@ -5,13 +5,13 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>cpln-k8s-cost-analyzer</id>
-    <version>1.0.3</version>
-    <packageSourceUrl>https://github.com/controlplane-com/k8s-cost-analyzer</packageSourceUrl>
-    <owners>Control Plane</owners>
+    <version>1.0.0</version>
+    <packageSourceUrl>https://github.com/controlplane-com/choco-cpln-k8s-cost-analyzer</packageSourceUrl>
+    <owners>MajidAbuRmila</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
-    <title>Control Plane K8s Cost Analyzer</title>
+    <title>Control Plane Corp. K8s Cost Analyzer 1.0.0</title>
     <authors>Control Plane</authors>
     <projectUrl>https://github.com/controlplane-com/k8s-cost-analyzer</projectUrl>
     <iconUrl>https://rawcdn.githack.com/controlplane-com/k8s-cost-analyzer/99462fdefe7471110e39c9c77a715695f048d18c/icon.png</iconUrl>
@@ -20,13 +20,13 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/controlplane-com/k8s-cost-analyzer</projectSourceUrl>
     <docsUrl>https://github.com/controlplane-com/k8s-cost-analyzer/blob/main/README.md</docsUrl>
-    <tags>kubernetes</tags>
+    <tags>cli kubernetes</tags>
     <summary>Control Plane - K8s Cost Analyzer</summary>
-    <description>This K8s Cost Analyzer is designed to help you calculate the cost savings when running workloads on the Control Plane platform versus running them on any cloud provider.</description>
+    <description>This K8s Cost Analyzer is designed to help you calculate the cost savings when running workloads on the Control Plane platform versus running them on any cloud provider. Visit the Software Source URL for more information.</description>
     <!-- =============================== -->
 
     <dependencies>
-      <dependency id="python" version="3.11.4" />
+      <dependency id="kubernetes-cli" version="1.27.3" />
     </dependencies>
   </metadata>
   <files>

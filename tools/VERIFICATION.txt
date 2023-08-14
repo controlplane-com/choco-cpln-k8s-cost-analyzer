@@ -1,0 +1,9 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The executable has been generated through the repository's source files,
+feel free to check the Software Source: https://github.com/controlplane-com/k8s-cost-analyzer
+
+File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/controlplane-com/k8s-cost-analyzer/415b5a33f155feed8dbd6577b128e3c89e4cc78f/LICENSE>
