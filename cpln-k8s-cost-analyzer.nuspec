@@ -5,7 +5,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>cpln-k8s-cost-analyzer</id>
-    <version>1.0.0</version>
+    <version>1.0.5</version>
     <packageSourceUrl>https://github.com/controlplane-com/choco-cpln-k8s-cost-analyzer</packageSourceUrl>
     <owners>MajidAbuRmila</owners>
     <!-- ============================== -->

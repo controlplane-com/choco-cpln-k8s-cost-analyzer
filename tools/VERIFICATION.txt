@@ -4,7 +4,7 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 The embedded software have been downloaded from the listed download
-location on <https://github.com/controlplane-com/k8s-cost-analyzer/releases/tag/v1.0.0>
+location on <https://github.com/controlplane-com/k8s-cost-analyzer/releases/tag/v1.0.5>
 and can be verified by doing the following:
 
 1. Download the `k8s-cost-analyzer-win-x64.exe` from the location above.
@@ -16,6 +16,6 @@ and can be verified by doing the following:
 3. The checksums should match the following:
 
   checksum type: sha256
-  checksum64: CA4D43E7BC668704E3915EDD84E0C6EEC137D1CAE4421DE38198C3EF7E35F83C
+  checksum64: 080A48DD558EB7EE74F365EE7097F2E7B0083D5300FD03A9B303579CAA2A7118
 
 File 'LICENSE.txt' is obtained from <https://github.com/controlplane-com/k8s-cost-analyzer/blob/main/LICENSE>
