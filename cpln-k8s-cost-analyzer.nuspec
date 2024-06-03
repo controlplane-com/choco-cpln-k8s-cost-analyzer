@@ -5,7 +5,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>cpln-k8s-cost-analyzer</id>
-    <version>1.0.5</version>
+    <version>1.1.1</version>
     <packageSourceUrl>https://github.com/controlplane-com/choco-cpln-k8s-cost-analyzer</packageSourceUrl>
     <owners>MajidAbuRmila</owners>
     <!-- ============================== -->
@@ -15,7 +15,7 @@
     <authors>Control Plane</authors>
     <projectUrl>https://github.com/controlplane-com/k8s-cost-analyzer</projectUrl>
     <iconUrl>https://rawcdn.githack.com/controlplane-com/k8s-cost-analyzer/99462fdefe7471110e39c9c77a715695f048d18c/icon.png</iconUrl>
-    <copyright>©2023, Control Plane Corporation. All rights reserved.</copyright>
+    <copyright>©2024, Control Plane Corporation. All rights reserved.</copyright>
     <licenseUrl>https://github.com/controlplane-com/k8s-cost-analyzer/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/controlplane-com/choco-cpln-k8s-cost-analyzer</projectSourceUrl>
